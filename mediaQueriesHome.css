@@ -1,0 +1,399 @@
+@media screen and (max-width: 1024px) {
+  .burger-menu_contant {
+		display: block;
+		position: absolute;
+		z-index: 10;
+	}
+
+	.burger-menu__button {
+		position: fixed;
+		top: 15px;
+		right: 20px;
+		z-index: 30;
+		width: 50px;
+		height: 50px;
+		border-radius: 50%;
+		background-color: #ff2f2fcf;
+		transition: 0.4s;
+	}
+
+	.burger-menu__lines,
+	.burger-menu__lines::after,
+	.burger-menu__lines::before {
+		position: absolute;
+		width: 30px;
+		height: 4px;
+		background-color: #fff;
+		text-align: initial;
+	}
+
+	.burger-menu__lines {
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	.burger-menu__lines::before {
+		content: '';
+		top: -10px;
+	}
+
+	.burger-menu__lines::after {
+		content: '';
+		top: 10px;
+	}
+
+	.burger-menu_active .burger-menu__button,
+	.burger-menu_active .burger-menu__lines {
+	 	background-color: transparent;
+	}
+
+	.burger-menu_active .burger-menu__lines::before {
+		top: 0;
+		transform: rotate(45deg);
+	}
+
+	.burger-menu_active .burger-menu__lines::after {
+		top: 0;
+		transform: rotate(-45deg);
+	}
+
+	.burger-menu__nav {
+		padding-top: 80px;
+		position: fixed;
+		z-index: 20;
+		display: flex;
+		flex-flow: column;
+		height: 100%;
+    background-color: #a8a2a2;
+		overflow-y: auto;
+		left: -100%;
+		transition: 0.5s;
+	}
+
+	.burger-menu_active .burger-menu__nav {
+		left: 0;
+		top: 0;
+	}
+
+	.burger-menu__link {
+		margin: 15px 50px;
+		font-family: 'Montserrat', sans-serif;;
+		font-size: 24px;
+		text-decoration: none;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		color: rgb(19, 19, 19);
+	}
+
+	.burger-menu__link:hover {
+	 	cursor: pointer;
+		color: rgb(238, 37, 37);
+		text-decoration: none;
+	}
+
+	.burger-menu__overlay {
+		display: none;
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100vw;
+		height: 100vh;
+		z-index: 10;
+		background-color: rgba(0,0,0,.85);
+	}
+
+	.burger-menu_active .burger-menu__overlay {
+	 	display: block;
+	}
+
+	.menu_list {
+		display: none;
+  }
+
+  .menu_wrapper {
+    justify-content: start;
+    margin-left: 60px;
+  }
+
+  .menu {
+    opacity: 1;
+    background: none;
+  }
+
+  .logo img {
+		width: 25%;
+		left: 5%;
+  }
+  
+  .about_creativia_wrapper, .our_product_features_description {
+    width: 95%;
+	}
+
+	.our_team_member_photo_overlay_links {
+    width: 80%;
+	}
+	
+	.our_skills_percentage {
+    width: 70%;
+	}
+
+	.our_blog_cotainer_post {
+    width: 80%;
+	}
+
+	.contact_us_container_map_adress {
+    left: 10%;
+	}
+}
+
+@media screen and (max-width: 768px) {
+
+	button {
+		font-size: 14px;
+	}
+
+	.header_forms {
+		display: block;
+	}
+
+	.features_button {
+		margin-right: 0;
+		margin-bottom: 20px;
+	}
+
+	.slider_arrow,
+	.contact_us_container_map_adress,
+	.footer_logo span {
+		display: none;
+	}
+
+	.header_slider_dots {
+		display: flex;
+	}
+
+	.slider_title {
+		width: 100%;
+		font-size: 16px;
+	}
+
+	.header_slider_wrapper,
+	.our_product_features_description,
+	.our_skills_percentage_block img {
+    width: 55%;
+	}
+
+	.header_slider_wrapper {
+    padding-bottom: 0;
+	}
+
+	.header_slider_wrapper {
+    margin: 185px auto 30px;
+	}
+
+	.about_creativia_wrapper,
+	.our_product_features,
+	.container_bestseller {
+    margin: 40px auto;
+	}
+	
+	.project_title p,
+	.our_product_features_description_img,
+	.our_skills_percentage_description .our_team_member_description_feature {
+		margin-bottom: 30px;
+	}
+
+	.about_creativia_description, 
+	.our_product_features_description,
+	.our_clients_review,
+	.our_blog_cotainer_post_icons,
+	.footer_logo {
+    display: block;
+	}
+
+	.about_creativia_description_left, .about_creativia_description_right,
+	.happy_clients_say, 
+	.our_clients_company,
+	.our_team_members {
+		width: 95%;
+		margin: 0 auto;
+	}
+
+	.about_creativia__img,
+	.our_teamwork .project_title,
+	.contact_us_container {
+		text-align: center;
+		margin-top: 30px;
+	}
+
+	.about_creativia__img img,
+	.container_bestseller_footer_wrapper {
+    width: 70%;
+	}
+
+	.scroll_img {
+		margin-bottom: 50px;
+		margin-top: 50px;
+	}
+
+	.about_creativia_features_block,
+	.our_team_representative,
+	.bestseller_price_list {
+		width: 45%;
+		margin-bottom: 30px;
+	}
+
+	.tab_portfolio_list_one .portfolio_img_with_overlay:nth-child(odd),
+	.tab_portfolio_list_one .portfolio_img_with_overlay:nth-child(even),
+	.tab_portfolio_list_two .portfolio_img_with_overlay:nth-child(odd),
+	.tab_portfolio_list_two .portfolio_img_with_overlay:nth-child(even) {
+		width: 50%;
+	}
+
+	.tab_portfolio_list {
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+
+	.our_product_features_description span {
+    padding: 10px;
+    margin-bottom: 5px;
+	}
+
+	.our_team_members,
+	.about_creativia_features,
+	.our_clients_company {
+		justify-content: space-around;
+	}
+
+	.our_skills_percentage_block,
+	.our_clients_company_block {
+		width: 45%;
+	}
+
+	.project_title {
+		width: 95%;
+		margin: 0 auto;
+	}
+
+	.our_blog_cotainer_post {
+    flex-direction: column;
+    text-align: center;
+	}
+
+	.contact_us_container_map_forms {
+		left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+	}
+
+	.our_clients_company_block:first-child,
+	.our_blog_cotainer_post img {
+		max-width: 100%;
+		margin-right: 0;
+	}
+
+	.footer_logo {
+		text-align: center;
+	}
+	
+}
+
+@media screen and (max-width: 480px) {
+
+
+	.logo img {
+		width: 45%;
+	}
+
+	.header_slider_wrapper {
+    width: 85%;
+	}
+
+	.our_clients_company,
+	.our_services_description,
+	.folow_creativia_social_media_description {
+		display: block;
+	}
+
+	.our_team_representative {
+		width: 70%;
+	}
+
+	.slider_title p,
+	.portfolio_creativia_features_wrapper {
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+
+	.about_creativia_features_block,
+	.our_product_features_description {
+		width: 95%;
+	}
+
+	.portfolio_creativia_features_menu {
+		display: flex;
+		width: 80%;
+		margin: 20px auto;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.portfolio_creativia_features_menu span {
+		width: 95%;
+		margin-right: 0;
+		margin-bottom: 15px;
+	}
+
+	.tab_portfolio_list_one .portfolio_img_with_overlay:nth-child(odd), 
+	.tab_portfolio_list_one .portfolio_img_with_overlay:nth-child(even), 
+	.tab_portfolio_list_two .portfolio_img_with_overlay:nth-child(odd), 
+	.tab_portfolio_list_two .portfolio_img_with_overlay:nth-child(even) {
+    width: 80%;
+	}
+
+	.our_clients_company_block,
+	.our_skills_percentage_block {
+		margin: 0 auto;
+		width: 90%;
+	}
+
+	.our_clients_company_block:first-child {
+		margin-bottom: 40px;
+		margin-right: auto;
+	}
+
+	.scroll_img {
+		display: none;
+	}
+
+	.our_services_left, 
+	.our_services_right,
+	.bestseller_price_list {
+		width: 100%;
+	}
+
+	.our_services_left {
+		margin-bottom: 20px;
+	}
+
+	.our_product_features_description span {
+		font-size: 18px;
+	}
+
+	.contact_us_container_map_forms {
+    width: 300px;
+    padding: 15px;
+	}
+
+	.social_media_block {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.social_media_block_wrapper {
+		margin-bottom: 10px;
+		margin-top: 30px;
+	}	
+}
